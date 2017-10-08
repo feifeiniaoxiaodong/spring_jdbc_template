@@ -17,12 +17,18 @@
 		<property name="password" value="wei_150"></property>
 				
 	</bean>
+	
 	<!-- 创建UserSerive和UserDao对象，在userservice注入userdao对象 -->
 	<bean id="userservice" class="cn.itcast.c3p0.UserService">
 		<!-- 注入dao对象 -->
 		<property name="userdao" ref="userdao"></property>
 	</bean>
-	<bean id="userdao" class="cn.itcast.c3p0.UserDao"></bean>
+	
+	<bean id="userdao" class="cn.itcast.c3p0.UserDao">
+		<!-- 注入jdbctemplate模板 -->
+		<property name="jdbctemplate" ref="jdbctemplate"></property>
+	
+	</bean>
 	
 	<!-- 创建jdbcTemplate对象 -->
 	<bean id="jdbctemplate" class="org.springframework.jdbc.core.JdbcTemplate">
