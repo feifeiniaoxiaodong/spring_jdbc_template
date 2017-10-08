@@ -111,7 +111,7 @@ public class JdbcTemplateDemo2 {
 	@Test
 	public void testList(){
 		//创建连接池
-		ComboPooledDataSource dataSource=new ComboPooledDataSource();
+	/*	ComboPooledDataSource dataSource=new ComboPooledDataSource();
 		try {
 			dataSource.setDriverClass("com.mysql.jdbc.Driver");
 			dataSource.setJdbcUrl("jdbc:mysql:///spring_jdbc_template");
@@ -120,7 +120,7 @@ public class JdbcTemplateDemo2 {
 		} catch (PropertyVetoException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 		
 		//********************//
 		//设置数据库信息
