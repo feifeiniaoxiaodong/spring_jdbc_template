@@ -17,8 +17,6 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 import com.mysql.jdbc.*;
 
 
-
-
 public class JdbcTemplateDemo2 {
 	
 	
@@ -140,8 +138,6 @@ public class JdbcTemplateDemo2 {
 		
 		System.out.println(list);
 	}
-	
-
 }
 
 
